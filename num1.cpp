@@ -54,8 +54,9 @@ int main()
 
   for (int i = 0; i < 14; ++i)
     {
-        cout << *(ptr2 + i);
+        cout << *(ptr + i);
     }
+    cout << '\n';
     
     delete[] ptr;
     ptr = nullptr;
@@ -66,7 +67,8 @@ int main()
     {
         cout << *(ptr2 + i);
     }
-  
+    cout << '\n';
+    
   delete[] ptr2;
   ptr2 = nullptr;
     return 0;
